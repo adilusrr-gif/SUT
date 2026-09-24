@@ -26,7 +26,7 @@ async def explain(payload: dict) -> str:
 Важно: подтвердить у зоотехника перед внедрением.
 
 Данные расчёта:
-${payload}
+{payload}
 """
     req = {
         "model": settings.ollama_model,
