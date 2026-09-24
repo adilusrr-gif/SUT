@@ -143,7 +143,7 @@ python3 -m venv .venv
 
 ```bash
 cd frontend
-npm ci
+npm install
 npm run build
 ```
 
@@ -158,3 +158,7 @@ npm run build
 Следующий этап: запуск на сервере; затем неизменяемые снимки цен/анализов и защита устаревших рекомендаций, фактическая выдача и остатки корма, проверяемое сравнение ДО/ПОСЛЕ. Эти функции не выдаются за реализованные в 2.1.
 
 Документация реализации OpenAI: https://developers.openai.com/api/docs/guides/structured-outputs
+
+## GitHub-сборка
+
+В репозиторий перенесён чистый исходный код v2.3.0 без внутренних каталогов `audit/` и `verification-v2.3/`. `package-lock.json` из архивной поставки не перенесён; Docker/frontend и локальная инструкция используют `npm install`.
